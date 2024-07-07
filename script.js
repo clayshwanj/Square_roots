@@ -7,7 +7,7 @@ function calculateSquareRoots(numbers) {
 
   // Print each number and its square root in the specified format
   //'sqrt' represents the current element in the squareRoots array.
-  //' index' represents the index of the current element in the (squareRoots) array.
+  //' index' represents the index of the current element in the (squareR oots) array.
   squareRoots.forEach((sqrt, index) => {
     //${numbers[index]} gets the value from the (numbers) array at the current 'index'.
     //${sqrt} an expression that represents the current element (square root) in the squareRoots array.
@@ -18,3 +18,19 @@ function calculateSquareRoots(numbers) {
   return squareRoots;
 }
 const squareRoots = calculateSquareRoots(numbers);
+
+// Alternatively;
+// function calculateSquareRootsForLoop(numbers) {
+//   an empty array
+//   const squareRoots = [];
+//   for (let i = 0; i < numbers.length; i++) {
+//     const sqrt = Math.sqrt(numbers[i]);
+//     The push() method adds new items to the end of an array returning the new length of the array.
+//     squareRoots.push(sqrt);
+//     console.log(`${numbers[i]}: ${sqrt}`);
+//   }
+//   return squareRoots;
+// }
+
+// const numbers = [4, 9, 16, 25];
+// const squareRoots = calculateSquareRootsForLoop(numbers);
